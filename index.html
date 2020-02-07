@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <title>Livraria do Mostiero</title>
+  <!-- Google Analytics -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
+    ga('create', 'UA-XXXXX-Y', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <!-- End Google Analytics -->
+</head>
+<body>
+  <header>
+    <div class="bg-image">
+      <div class="bg-text">
+        <h1>Livraria do Mosteiro</h1>
+        <h3>Abadia Trapista Nossa Senhora do Novo Mundo</h3>
+      </div>
+    </div>
+  </header>
+  <nav class="dropdown">
+    <!--Hamburger-->
+    <div onclick="mobileNavbar()" class="dropbtn material-icons">menu</div>
+    <div id="dropdown" class="dropdown-content">
+      <a href="#">Início</a>
+      <a class="dd--active" href="#">Catálogo</a>
+      <a href="http://mosteirotrapista.org.br/index.php" target="_blank">Site do Mosteiro</a>
+      <a href="https://caminhocisterciense.com/" target="_blank">Blog</a>
+      <a href="#">Sobre</a>
+    </div>
+    <!--End of Hamburger-->
+    <ul>
+      <li><a href="#">Início</a></li>
+      <li><a href="#" class="li--active">Catálogo</a></li>
+      <li><a href="http://mosteirotrapista.org.br/index.php" target="_blank">Site do Mosteiro</a></li>
+      <li><a href="https://caminhocisterciense.com/" target="_blank">Blog</a></li>
+      <li><a href="#">Sobre</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section>
+      <h2>Catálogo de Livros</h2>
+      <div>
+        <i>"Renovai-vos pela transformação espiritual de vossa inteligência"</i></br>Ef 4, 23-24
+      </div>
+      <p>A página O Caminho Cisterciense, juntamente com a Livraria do Mosteiro Trapista Nossa Senhora do Novo Mundo, desejam promover a boa literatura monástica e contemplativa, publicada atualmente em nosso país, com enfoque na tradição cisterciense.
+        Está nascendo assim a "Livraria do Mosteiro", que se propõe a divulgar e reunir essa literatura em um só lugar.
+        A forma de pagamento é via depósito bancário.</p>
+    </section>
+    <div id="btnContainer">
+        <h3>Categorias</h3>
+        <div class="selectors">
+          <button class="btn active" onclick="filterSelection('all')">Mostrar todas</button>
+          <button class="btn" onclick="filterSelection('liturgia--')">Liturgia</button>
+          <button class="btn" onclick="filterSelection('espiritualidade--')">Espiritualidade</button>
+          <button class="btn" onclick="filterSelection('teologia--')">Teologia</button>
+          <button class="btn" onclick="filterSelection('padres-e-madres-cistercienses')">Padres e Madres Cistercienses</button>
+          <button class="btn" onclick="filterSelection('padres-e-madres-cistercienses')">Padres do Deserto</button>
+          <button class="btn" onclick="filterSelection('padres-e-madres-cistercienses')">Padres da Igreja</button>
+        </div>
+    </div>
+    <div class="container" id="categorySelector">
+
+      <div class="filterDiv liturgia--">
+        <div class="accordion-box">
+          <div class="bk-grid-1">
+            <img src="/images/livraria_livros_capas/A_MONTANHA_DOS_SETE_PATAMARES_capa.jpg">
+          </div>
+          <div class="bk-grid-2">
+            <h3>O Espírito da Liturgia</h3>
+          </div>
+          <div class="bk-grid-3">
+            <strong>Autor:    </strong>Romano Guardini    </br>
+            <strong>Editora:  </strong>Cultor de Livros   </br>
+            <strong>R$        </strong>25,00              </br>
+          </div>
+          <div class="bk-grid-4">
+            <button class="accordion"><i class=" arrow material-icons" style="transform: rotate(270deg);"></i></button>
+            <div class="accordion__panel">
+              <p>A liturgia representa a vida espiritual objetiva da Igreja. E "a verdade rezada", a verdade nuclear das coisas divinas e humanas numa expressão sacramental e ritual, que conduz o espírito humano para a realidade sobrenatural. "O espírito da liturgia" é uma das mais famosas obras de Romano Guardini, na qual Joseph Ratzinger buscou inspiração para compor seu pensamento a respeito do sentido da liturgia. Aqui, o teólogo alemão não pretende expor de modo sistemático o conteúdo da liturgia, mas apenas pôr em relevo o seu espírito e os seus elementos fundamentais, afim de que a liturgia, que é vida da Igreja, seja vivida em plenitude por seus fiéis.</p>
+              <p>"Guardini estava profundamente convicto de que o homem é espírito no corpo e corpo no espírito e que, portanto, a liturgia e o símbolo o levam à essência de si mesmo conduzindo-o finalmente à verdade através da adoração." (Bento XVI)</p>
+            </div>    
+          </div>
+          <div class="end-line hr bk-grid-4"></div>
+        </div>
+      </div>
+
+      <div class="filterDiv espiritualidade--">
+        <div class="accordion-box">
+          <div class="bk-grid-1">
+            <img src="/images/livraria_livros_capas/A_ALMA_DE_TODO_APOSTOLADO_capa.jpg">
+          </div>
+          <div class="bk-grid-2">
+            <h3>O Espírito da Liturgia</h3>
+          </div>
+          <div class="bk-grid-3">
+            <strong>Autor:    </strong>Romano Guardini    </br>
+            <strong>Editora:  </strong>Cultor de Livros   </br>
+            <strong>R$        </strong>25,00              </br>
+          </div>
+          <div class="bk-grid-4">
+            <button class="accordion"><i class=" arrow material-icons" style="transform: rotate(270deg);"></i></button>
+            <div class="accordion__panel">
+              <p>A liturgia representa a vida espiritual objetiva da Igreja. E "a verdade rezada", a verdade nuclear das coisas divinas e humanas numa expressão sacramental e ritual, que conduz o espírito humano para a realidade sobrenatural. "O espírito da liturgia" é uma das mais famosas obras de Romano Guardini, na qual Joseph Ratzinger buscou inspiração para compor seu pensamento a respeito do sentido da liturgia. Aqui, o teólogo alemão não pretende expor de modo sistemático o conteúdo da liturgia, mas apenas pôr em relevo o seu espírito e os seus elementos fundamentais, afim de que a liturgia, que é vida da Igreja, seja vivida em plenitude por seus fiéis.</p>
+              <p>"Guardini estava profundamente convicto de que o homem é espírito no corpo e corpo no espírito e que, portanto, a liturgia e o símbolo o levam à essência de si mesmo conduzindo-o finalmente à verdade através da adoração." (Bento XVI)</p>
+            </div>    
+          </div>
+          <div class="end-line hr bk-grid-4"></div>
+        </div>
+      </div>
+
+      <div class="filterDiv teologia--">
+        <div class="accordion-box">
+          <div class="bk-grid-1">
+            <img src="/images/livraria_livros_capas/A_OPÇÃO_BENEDITINA_capa.jpg">
+          </div>
+          <div class="bk-grid-2">
+            <h3>O Espírito da Liturgia</h3>
+          </div>
+          <div class="bk-grid-3">
+            <strong>Autor:    </strong>Romano Guardini    </br>
+            <strong>Editora:  </strong>Cultor de Livros   </br>
+            <strong>R$        </strong>25,00              </br>
+          </div>
+          <div class="bk-grid-4">
+            <button class="accordion"><i class=" arrow material-icons" style="transform: rotate(270deg);"></i></button>
+            <div class="accordion__panel">
+              <p>A liturgia representa a vida espiritual objetiva da Igreja. E "a verdade rezada", a verdade nuclear das coisas divinas e humanas numa expressão sacramental e ritual, que conduz o espírito humano para a realidade sobrenatural. "O espírito da liturgia" é uma das mais famosas obras de Romano Guardini, na qual Joseph Ratzinger buscou inspiração para compor seu pensamento a respeito do sentido da liturgia. Aqui, o teólogo alemão não pretende expor de modo sistemático o conteúdo da liturgia, mas apenas pôr em relevo o seu espírito e os seus elementos fundamentais, afim de que a liturgia, que é vida da Igreja, seja vivida em plenitude por seus fiéis.</p>
+              <p>"Guardini estava profundamente convicto de que o homem é espírito no corpo e corpo no espírito e que, portanto, a liturgia e o símbolo o levam à essência de si mesmo conduzindo-o finalmente à verdade através da adoração." (Bento XVI)</p>
+            </div>    
+          </div>
+          <div class="end-line hr bk-grid-4"></div>
+        </div>
+      </div>
+
+      <div class="filterDiv padres-e-madres-cistercienses">
+        <div class="accordion-box">
+          <div class="bk-grid-1">
+            <img src="/images/livraria_livros_capas/A_TEOLOGIA_MÍSTICA_DE_SÃO_BERNARDO_capa.jpg">
+          </div>
+          <div class="bk-grid-2">
+            <h3>O Espírito da Liturgia</h3>
+          </div>
+          <div class="bk-grid-3">
+            <strong>Autor:    </strong>Romano Guardini    </br>
+            <strong>Editora:  </strong>Cultor de Livros   </br>
+            <strong>R$        </strong>25,00              </br>
+          </div>
+          <div class="bk-grid-4">
+            <button class="accordion"><i class=" arrow material-icons" style="transform: rotate(270deg);"></i></button>
+            <div class="accordion__panel">
+              <p>A liturgia representa a vida espiritual objetiva da Igreja. E "a verdade rezada", a verdade nuclear das coisas divinas e humanas numa expressão sacramental e ritual, que conduz o espírito humano para a realidade sobrenatural. "O espírito da liturgia" é uma das mais famosas obras de Romano Guardini, na qual Joseph Ratzinger buscou inspiração para compor seu pensamento a respeito do sentido da liturgia. Aqui, o teólogo alemão não pretende expor de modo sistemático o conteúdo da liturgia, mas apenas pôr em relevo o seu espírito e os seus elementos fundamentais, afim de que a liturgia, que é vida da Igreja, seja vivida em plenitude por seus fiéis.</p>
+              <p>"Guardini estava profundamente convicto de que o homem é espírito no corpo e corpo no espírito e que, portanto, a liturgia e o símbolo o levam à essência de si mesmo conduzindo-o finalmente à verdade através da adoração." (Bento XVI)</p>
+            </div>    
+          </div>
+          <div class="end-line hr bk-grid-4"></div>
+        </div>
+      </div>
+
+      <div class="filterDiv padres-e-madres-cistercienses">
+        <div class="accordion-box">
+          <div class="bk-grid-1">
+            <img src="/images/livraria_livros_capas/O_AMOR_ÀS_LETRAS_E_O_DESEJO_DE_DEUS_capa.jpg">
+          </div>
+          <div class="bk-grid-2">
+            <h3>O Espírito da Liturgia</h3>
+          </div>
+          <div class="bk-grid-3">
+            <strong>Autor:    </strong>Romano Guardini    </br>
+            <strong>Editora:  </strong>Cultor de Livros   </br>
+            <strong>R$        </strong>25,00              </br>
+          </div>
+          <div class="bk-grid-4">
+            <button class="accordion"><i class=" arrow material-icons" style="transform: rotate(270deg);"></i></button>
+            <div class="accordion__panel">
+              <p>A liturgia representa a vida espiritual objetiva da Igreja. E "a verdade rezada", a verdade nuclear das coisas divinas e humanas numa expressão sacramental e ritual, que conduz o espírito humano para a realidade sobrenatural. "O espírito da liturgia" é uma das mais famosas obras de Romano Guardini, na qual Joseph Ratzinger buscou inspiração para compor seu pensamento a respeito do sentido da liturgia. Aqui, o teólogo alemão não pretende expor de modo sistemático o conteúdo da liturgia, mas apenas pôr em relevo o seu espírito e os seus elementos fundamentais, afim de que a liturgia, que é vida da Igreja, seja vivida em plenitude por seus fiéis.</p>
+              <p>"Guardini estava profundamente convicto de que o homem é espírito no corpo e corpo no espírito e que, portanto, a liturgia e o símbolo o levam à essência de si mesmo conduzindo-o finalmente à verdade através da adoração." (Bento XVI)</p>
+            </div>    
+          </div>
+          <div class="end-line hr bk-grid-4"></div>
+        </div>
+      </div>
+
+      <div class="filterDiv padres-e-madres-cistercienses">
+        <div class="accordion-box">
+          <div class="bk-grid-1">
+            <img src="/images/livraria_livros_capas/O_CORPO_MÍSTICO_CAPA.jpg">
+          </div>
+          <div class="bk-grid-2">
+            <h3>O Espírito da Liturgia</h3>
+          </div>
+          <div class="bk-grid-3">
+            <strong>Autor:    </strong>Romano Guardini    </br>
+            <strong>Editora:  </strong>Cultor de Livros   </br>
+            <strong>R$        </strong>25,00              </br>
+          </div>
+          <div class="bk-grid-4">
+            <button class="accordion"><i class=" arrow material-icons" style="transform: rotate(270deg);"></i></button>
+            <div class="accordion__panel">
+              <p>A liturgia representa a vida espiritual objetiva da Igreja. E "a verdade rezada", a verdade nuclear das coisas divinas e humanas numa expressão sacramental e ritual, que conduz o espírito humano para a realidade sobrenatural. "O espírito da liturgia" é uma das mais famosas obras de Romano Guardini, na qual Joseph Ratzinger buscou inspiração para compor seu pensamento a respeito do sentido da liturgia. Aqui, o teólogo alemão não pretende expor de modo sistemático o conteúdo da liturgia, mas apenas pôr em relevo o seu espírito e os seus elementos fundamentais, afim de que a liturgia, que é vida da Igreja, seja vivida em plenitude por seus fiéis.</p>
+              <p>"Guardini estava profundamente convicto de que o homem é espírito no corpo e corpo no espírito e que, portanto, a liturgia e o símbolo o levam à essência de si mesmo conduzindo-o finalmente à verdade através da adoração." (Bento XVI)</p>
+            </div>    
+          </div>
+          <div class="end-line hr bk-grid-4"></div>
+        </div>
+      </div>
+
+
+    </div>
+  </main>
+  <footer>
+    <h2>Abadia Trapista Nossa Senhora do Novo Mundo</h2>
+    <p><a href="https://goo.gl/maps/EUDC2cfLLrzM8v3DA" alt="Mostrar no Google Maps" target="_blank">Caixa Postal 11 – Campo do Tenente (PR) – 83870-000</a></p>
+    <p><a href="tel:+55-41-3628-1264" alt="(41)3628-1264" target="_blank">Fone/fax: (41) 3628-1264</a></p>
+    <ul>
+      <li><i class="material-icons">email</i><a href="mailto:novomundo@mosteirotrapista.org.br" alt='novomundo@mosteirotrapista.org.br' target="_blank">Comunidade</a></li>
+      <li><i class="material-icons">email</i><a href="mailto:hospedaria@mosteirotrapista.org.br" alt='hospedaria@mosteirotrapista.org.br' target="_blank">Hospedaria</a></li>
+      <li><i class="material-icons">email</i><a href="mailto:vocacional@mosteirotrapista.org.br" alt='vocacional@mosteirotrapista.org.br' target="_blank">Vocações</a></li>
+    </ul>
+  </footer>
+  <script src="/js/script.js"></script>
+  </body>
+  </html>
