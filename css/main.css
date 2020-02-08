@@ -167,7 +167,7 @@ main {
 main section div {
   text-align: right;
   padding: 20px;
-  border-right: 3px solid #8E8E93;
+  border-right: 4px solid #eeeeee;
 }
 
 @media (min-width: 1020px) {
@@ -179,7 +179,7 @@ main section div {
 
 @media (min-width: 1020px) {
   main .selectors {
-    border-right: 1px solid #8E8E93;
+    border-right: 4px solid #eeeeee;
   }
   main .selectors .btn {
     background-color: #ffffff00 !important;
@@ -241,7 +241,7 @@ main .btn.active {
 /**Accordion**/
 .accordion-box {
   background-color: #ffffff00;
-  width: 90%;
+  width: 100%;
   border: none;
   text-align: center;
   outline: none;
@@ -348,20 +348,11 @@ main .btn.active {
 }
 
 .hr {
-  width: 50%;
-  margin: 30px 0 40px 50%;
-  border-bottom: 1px solid #8E8E93;
+  /*width: 50%;*/
+  margin: 30px 0 40px 0;
+  border-bottom: 4px solid #eeeeee;
 }
 
-/*********************************************************************************
-$var == .filterDiv:last-child;
-
-@if $var == true {
-.end-line {
-  @extend .hr;
-}
-}
-/********************************************************************************/
 /**Footer**/
 footer {
   background-color: #EBEBEB;

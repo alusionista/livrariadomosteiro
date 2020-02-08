@@ -182,7 +182,7 @@ main{
     div {
       text-align: right;
       padding: 20px;
-      border-right: 3px solid color(forth);
+      border-right: 4px solid color(third);
     }
   }  
   #btnContainer {
@@ -195,7 +195,7 @@ main{
   
   @include desktop {
     .selectors {
-      border-right: 1px solid color(forth);
+      border-right: 4px solid color(third);
       .btn {
         background-color: color(none) !important;
         font-size: 20px;
@@ -251,7 +251,7 @@ main{
 
 .accordion-box {
   background-color: color(none);
-  width: 90%;
+  width: 100%;
   border: none;
   text-align: center;
   outline: none;
@@ -343,19 +343,10 @@ main{
   text-align: left;
 }
 .hr {
-  width: 50%;
-  margin: 30px 0 40px 50%;
-  border-bottom: 1px solid color(forth);
+  /*width: 50%;*/
+  margin: 30px 0 40px /*50%*/ 0;
+  border-bottom: 4px solid color(third);
 }
-/*********************************************************************************
-$var == .filterDiv:last-child;
-
-@if $var == true {
-.end-line {
-  @extend .hr;
-}
-}
-/********************************************************************************/
 
 /**Footer**/
 
