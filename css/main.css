@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Montserrat&display=swap");
 #return-to-top {
   position: fixed;
-  bottom: 1%;
-  right: 1%;
+  bottom: 15px;
+  right: 15px;
   background: #8E8E93;
   width: 50px;
   height: 50px;
@@ -224,7 +224,10 @@ main {
   margin-bottom: 15px;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "heading" "categories" "buy-button" "books";
+      grid-template-areas: "heading"
+ "categories"
+ "buy-button"
+ "books";
 }
 
 main p {
@@ -246,7 +249,9 @@ main p {
         grid-template-columns: 250px auto;
     -ms-grid-rows: auto;
         grid-template-rows: auto;
-        grid-template-areas: "heading        heading" "categories  buy-button" "categories       books";
+        grid-template-areas: "heading        heading"
+ "categories  buy-button"
+ "categories       books";
   }
 }
 
